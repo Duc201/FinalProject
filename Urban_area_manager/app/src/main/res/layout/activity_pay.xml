@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_background"
+    android:orientation="vertical"
+    tools:context=".feature.Resident.Home.Bill.ZaloPay.PayActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:layout_collapseMode="pin"
+        app:title="Chọn phương thức thanh toán"
+        app:navigationIcon="@drawable/ic_back"
+        app:popupTheme="@style/AppTheme.PopupOverlay"
+        app:theme="@style/CustomToolbar"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    style="@style/CustomTitleText"
+    android:textStyle="bold"
+    android:layout_marginLeft="10dp"
+    android:layout_marginTop="@dimen/size_10"
+    android:layout_marginBottom="@dimen/size_10"
+    android:text="Tất cả phương thức thanh toán"/>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="@dimen/size_10"
+        android:animateLayoutChanges="true"
+        android:elevation="@dimen/double_normal"
+        app:cardElevation="5dp"
+        android:padding="20dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/background_selector">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_70"
+            android:id="@+id/zalopay"
+            android:padding="@dimen/size_5">
+            <ImageView
+                android:id="@+id/img_camera"
+                android:layout_width="@dimen/size_40"
+                android:layout_height="@dimen/size_40"
+                android:scaleType="fitXY"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintRight_toLeftOf="@id/llo"
+                android:src="@drawable/img_zalopay"/>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/llo"
+                android:layout_marginLeft="@dimen/size_10"
+                app:layout_constraintLeft_toRightOf="@+id/img_camera"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ví ZaloPay"
+                    android:textStyle="bold"
+                    android:id="@+id/name_camera"
+                    android:textSize="@dimen/text_size_16"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bạn cần có ứng dụng Zalo pay"
+                    android:id="@+id/name_area"
+                    android:textColor="@color/semi_gray"
+                    android:layout_marginTop="@dimen/size_5"
+                    android:textSize="@dimen/text_size_16"/>
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="@dimen/size_10"
+        android:animateLayoutChanges="true"
+        android:elevation="@dimen/double_normal"
+        app:cardElevation="5dp"
+        android:padding="20dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/card_view_shadow">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_70"
+            android:id="@+id/momo"
+            android:padding="@dimen/size_5">
+            <ImageView
+                android:id="@+id/img_camera1"
+                android:layout_width="@dimen/size_40"
+                android:layout_height="@dimen/size_40"
+                android:scaleType="fitXY"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintRight_toLeftOf="@id/llo1"
+                android:src="@drawable/img_momo"/>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/llo1"
+                android:layout_marginLeft="@dimen/size_10"
+                app:layout_constraintLeft_toRightOf="@+id/img_camera1"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ví MOMO"
+                    android:textStyle="bold"
+                    android:id="@+id/name_camera1"
+                    android:textSize="@dimen/text_size_16"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bạn cần có ứng dụng MOMO"
+                    android:id="@+id/name_area1"
+                    android:textColor="@color/semi_gray"
+                    android:layout_marginTop="@dimen/size_5"
+                    android:textSize="@dimen/text_size_16"/>
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

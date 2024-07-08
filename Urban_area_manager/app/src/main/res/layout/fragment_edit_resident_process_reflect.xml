@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/light_background"
+    tools:context=".feature.Resident.Reflect.MyReflect.EditResidentProcessReflectFragment">
+<com.example.urban_area_manager.utils.view.CustomScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:navigationIcon="@drawable/ic_back"
+            app:title="Tạo phản ánh"
+            app:titleTextColor="@color/black"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="20dp" />
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.viewpager2.widget.ViewPager2
+                android:id="@+id/images_vp2"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <me.relex.circleindicator.CircleIndicator3
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                app:ci_drawable="@drawable/bg_indicator"
+                android:id="@+id/circleIndicator3"
+                android:layout_marginBottom="@dimen/size_5"
+                app:layout_constraintBottom_toBottomOf="@id/images_vp2"
+                app:layout_constraintLeft_toLeftOf="@id/images_vp2"
+                app:layout_constraintRight_toRightOf="@id/images_vp2"  />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_25"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/size_10"
+                style="@style/CustomTitleText"
+                android:text="Nội dung phản ánh"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size_10"
+                android:background="@drawable/custom_edit_text"
+                android:paddingHorizontal="@dimen/size_10"
+                android:paddingLeft="26dp"
+                android:paddingRight="26dp"
+                android:id="@+id/edt_content"
+                style="@style/CustomTextInput" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_25"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/size_10"
+                style="@style/CustomTitleText"
+                android:text="Vị trí cụ thể"/>
+            <EditText
+                android:id="@+id/edt_SpecificLocation"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_48"
+                android:layout_marginTop="@dimen/size_10"
+                android:background="@drawable/custom_edit_text"
+                style="@style/CustomTextInput"
+                android:maxLines="1"
+                android:paddingHorizontal="@dimen/size_10"
+                android:paddingLeft="26dp"
+                android:paddingRight="26dp"
+                android:textColorHint="@color/blue_text"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_25"
+            android:orientation="horizontal"
+            android:weightSum="4">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/size_10"
+                android:layout_weight="1"
+                android:text="Khu vực" />
+
+            <TextView
+                android:id="@+id/tv_loaction"
+                style="@style/CustomHintTextLeft"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:maxLines="1"
+                android:paddingHorizontal="@dimen/size_10"
+                android:paddingLeft="26dp"
+                android:paddingRight="26dp"
+                android:textColorHint="@color/blue_text"
+                android:textStyle="italic" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_25"
+            android:orientation="horizontal"
+            android:weightSum="4">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/size_10"
+                android:layout_weight="1"
+                android:text="Lĩnh vực" />
+
+            <TextView
+                android:id="@+id/field"
+                style="@style/CustomHintTextLeft"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:maxLines="1"
+                android:paddingHorizontal="@dimen/size_10"
+                android:paddingLeft="26dp"
+                android:paddingRight="26dp"
+                android:textColorHint="@color/blue_text"
+                android:textStyle="italic" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_25"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/size_10"
+                android:layout_weight="1"
+                android:text="Ngày Phản ánh" />
+
+            <TextView
+                android:id="@+id/timeCreator"
+                style="@style/CustomHintTextLeft"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:maxLines="1"
+                android:paddingHorizontal="@dimen/size_10"
+                android:paddingLeft="26dp"
+                android:paddingRight="26dp"
+                android:textColorHint="@color/blue_text"
+                android:textStyle="italic" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_25"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/size_10"
+                android:layout_weight="6"
+                android:text="Vị trí" />
+
+            <fragment
+                android:id="@+id/map_edit_resident"
+                class="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_marginBottom="@dimen/size_40"/>
+        </LinearLayout>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_send"
+            style="@style/ButtonBlue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_25"
+            android:layout_marginBottom="@dimen/size_80"
+
+            android:text="Gửi" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</com.example.urban_area_manager.utils.view.CustomScrollView>
+
+
+</LinearLayout>

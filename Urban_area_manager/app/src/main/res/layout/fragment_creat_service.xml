@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/light_background"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".feature.Admin.Home.Bill.View.CreatService">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:layout_collapseMode="pin"
+        app:title=" Thêm tòa nhà"
+        app:navigationIcon="@drawable/ic_back"
+        app:popupTheme="@style/AppTheme.AppBarOverlay" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="10dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Thông tin dịch vụ"
+            style="@style/CustomTitleText"
+            android:textStyle="bold"
+            android:layout_margin="@dimen/size_20"/>
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/CustomTitleText"
+                android:text="Tên dịch vụ"/>/>
+            <EditText
+                android:id="@+id/edt_service_name"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_48"
+                android:layout_marginTop="@dimen/size_10"
+                android:paddingLeft="26dp"
+                android:paddingRight="26dp"
+                style="@style/CustomTextInput"
+                android:background="@drawable/background_edt"
+                android:maxLines="1" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/CustomTitleText"
+                android:text="Đơn vị"/>/>
+            <EditText
+                android:id="@+id/edt_service_unit"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_48"
+                android:layout_marginTop="@dimen/size_10"
+                android:paddingLeft="26dp"
+                android:paddingRight="26dp"
+                style="@style/CustomTextInput"
+                android:background="@drawable/background_edt"
+                android:maxLines="1" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/CustomTitleText"
+                android:text="Giá"/>/>
+            <EditText
+                android:id="@+id/edt_service_price"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_48"
+                android:layout_marginTop="@dimen/size_10"
+                android:paddingLeft="26dp"
+                android:paddingRight="26dp"
+                style="@style/CustomTextInput"
+                android:inputType="numberDecimal"
+                android:background="@drawable/background_edt"
+                android:maxLines="1" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_margin="@dimen/size_20"
+            android:id="@+id/btn_send"
+            style="@style/ButtonBlue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_25"
+            android:text="Tạo" />
+    </LinearLayout>
+
+
+
+</LinearLayout>

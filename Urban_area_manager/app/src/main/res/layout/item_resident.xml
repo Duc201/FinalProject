@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="@dimen/size_10"
+    android:layout_gravity="center"
+    android:animateLayoutChanges="true"
+    android:elevation="@dimen/double_normal"
+    app:cardElevation="5dp"
+    android:padding="20dp"
+    android:layout_margin="10dp"
+    android:background="@drawable/card_view_shadow">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/item_resident"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/img_resident"
+            android:layout_width="@dimen/size_100"
+            android:layout_height="@dimen/size_100"
+            android:scaleType="fitXY"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:src="@drawable/ic_user_gray"/>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/size_10"
+            android:id="@+id/llo"
+            app:layout_constraintLeft_toRightOf="@+id/img_resident"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Huỳnh Đức Đỗ"
+                android:id="@+id/resident_name"
+                style="@style/TextBoldBlueDark"
+                android:textSize="@dimen/text_size_16"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="125904999"
+                android:id="@+id/indentityNumber"
+                android:textColor="@color/semi_gray"
+                android:layout_marginTop="@dimen/size_5"
+                android:textSize="@dimen/text_size_16"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0989763834"
+                android:id="@+id/apartment_email"
+                android:textColor="@color/semi_gray"
+                android:layout_marginTop="@dimen/size_5"
+                android:textSize="@dimen/text_size_16"/>
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size_7"
+            android:id="@+id/state"
+            app:layout_constraintBottom_toBottomOf="@+id/img_resident"
+            app:layout_constraintRight_toRightOf="@+id/img_resident"
+            android:background="#448AFF"
+            android:textColor="@color/white"
+            android:padding="3dp"
+            android:text="Đã Xác Minh"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

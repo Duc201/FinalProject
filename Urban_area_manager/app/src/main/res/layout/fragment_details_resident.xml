@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/frame_details_resident"
+    android:background="@color/light_background"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:layout_collapseMode="pin"
+            app:title=" Chi tiết cư dân"
+            app:navigationIcon="@drawable/ic_back"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:theme="@style/CustomToolbar"/>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/size_30"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/size_10"
+                    android:orientation="vertical">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/img_resident"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:src="@drawable/ic_user_bottom"
+                        app:civ_border_color="#F7F5F5"
+                        app:civ_border_width="2dp" />
+
+                    <TextView
+                        style="@style/CustomTitleText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/size_10"
+                        android:text="Thay đổi ảnh cư dân" />
+                </LinearLayout>
+
+                <TextView
+                    style="@style/CustomTitleText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/size_10"
+                    android:text="Thông tin cư dân"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/size_10"
+                    android:orientation="vertical">
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            style="@style/CustomTitleText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Tên Cư dân" />/>
+
+                        <EditText
+                            android:id="@+id/edt_resident_name"
+                            style="@style/CustomTextInput"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/size_48"
+                            android:layout_marginTop="@dimen/size_10"
+                            android:background="@drawable/background_edt"
+                            android:maxLines="1"
+                            android:paddingLeft="26dp"
+                            android:paddingRight="26dp" />
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            style="@style/CustomTitleText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/size_10"
+                            android:text="Ngày sinh" />/>
+
+                        <TextView
+                            android:id="@+id/edt_resident_birth"
+                            style="@style/CustomTextInput"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/size_48"
+                            android:layout_marginTop="@dimen/size_10"
+                            android:background="@drawable/background_edt"
+                            android:paddingLeft="26dp"
+                            android:paddingRight="26dp" />
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            style="@style/CustomTitleText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/size_10"
+                            android:text="Giới tính" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/size_10"
+                            android:background="@drawable/shape_border"
+                            android:orientation="vertical"
+                            android:paddingLeft="26dp"
+                            android:paddingRight="26dp">
+
+                            <Spinner
+                                android:id="@+id/spin_sex"
+                                style="@style/CustomTextInput"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/size_48" />
+                        </LinearLayout>
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            style="@style/CustomTitleText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/size_10"
+                            android:text="Quốc tịch" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/size_10"
+                            android:background="@drawable/shape_border"
+                            android:orientation="vertical"
+                            android:paddingLeft="26dp"
+                            android:paddingRight="26dp">
+
+                            <com.hbb20.CountryCodePicker
+                                android:id="@+id/spin_nationality"
+                                style="@style/CustomTextInput"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/size_48"
+                                app:ccp_showFullName="true"
+                                app:ccp_showNameCode="false"
+                                app:ccp_showPhoneCode="false"
+                                app:ccp_textGravity="LEFT" />
+                        </LinearLayout>
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            style="@style/CustomTitleText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/size_10"
+                            android:text="Số CCCD/CMND" />
+
+                        <EditText
+                            android:id="@+id/edt_resident_cccd"
+                            style="@style/CustomTextInput"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/size_48"
+                            android:layout_marginTop="@dimen/size_10"
+                            android:background="@drawable/background_edt"
+                            android:inputType="number"
+                            android:maxLines="1"
+                            android:paddingLeft="26dp"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            style="@style/CustomTitleText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/size_10"
+                            android:text="Địa chỉ" />
+
+                        <EditText
+                            android:id="@+id/edt_resident_address"
+                            style="@style/CustomTextInput"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/size_48"
+                            android:layout_marginTop="@dimen/size_10"
+                            android:background="@drawable/background_edt"
+                            android:maxLines="1"
+                            android:paddingLeft="26dp"
+                            android:paddingRight="26dp" />
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            style="@style/CustomTitleText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/size_10"
+                            android:text="Số điện thoại" />
+
+                        <EditText
+                            android:id="@+id/edt_resident_phone"
+                            style="@style/CustomTextInput"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/size_48"
+                            android:layout_marginTop="@dimen/size_10"
+                            android:background="@drawable/background_edt"
+                            android:maxLines="1"
+                            android:paddingLeft="26dp"
+                            android:paddingRight="26dp" />
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            style="@style/CustomTitleText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/size_10"
+                            android:text="Email" />
+
+                        <EditText
+                            android:id="@+id/edt_resident_email"
+                            style="@style/CustomTextInput"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/size_48"
+                            android:layout_marginTop="@dimen/size_10"
+                            android:background="@drawable/background_edt"
+                            android:maxLines="1"
+                            android:paddingLeft="26dp"
+                            android:paddingRight="26dp" />
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            style="@style/CustomTitleText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/size_10"
+                            android:text="Danh sách căn hộ"
+                            android:layout_marginBottom="10dp"/>
+
+                        <TableLayout
+                            android:id="@+id/tableLayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:stretchColumns="1">
+
+                            <!-- Table Header -->
+                            <TableRow>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Tòa nhà"
+                                    android:background="@android:color/darker_gray"
+                                    android:padding="10dp"
+                                    android:gravity="center"
+
+                                    android:textSize="16dp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@android:color/darker_gray"
+                                    android:text="Căn hộ"
+                                    android:gravity="center"
+                                    android:textSize="16dp"
+                                    android:padding="10dp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@android:color/darker_gray"
+                                    android:text="Mối quan hệ"
+                                    android:gravity="center"
+                                    android:textSize="16dp"
+                                    android:padding="10dp"
+                                    android:textStyle="bold" />
+                            </TableRow>
+                        </TableLayout>
+
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+</FrameLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="@dimen/size_10"
+    android:layout_gravity="center"
+    android:animateLayoutChanges="true"
+    android:elevation="@dimen/double_normal"
+    app:cardElevation="5dp"
+    android:padding="10dp"
+    android:layout_margin="8dp"
+    android:background="@drawable/card_view_shadow">
+    <LinearLayout
+        android:id="@+id/item_notifi"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_marginLeft="@dimen/size_10"
+        android:layout_marginRight="@dimen/size_10"
+        android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Phát động Tết trồng cây “Đời đời nhớ ơn Bác Hồ” Xuân Giáp Thìn năm 2024 "
+                android:maxLines="1"
+                android:id="@+id/title"
+                style="@style/TextBoldBlueDark"
+                android:layout_marginTop="@dimen/size_10"
+                android:textSize="@dimen/text_size_16"/>
+
+            <TextView
+                android:id="@+id/content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size_5"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text="Sáng ngày 01/3/2024, tại Khu K9 (Đá Chông, Ba Vì, Hà Nội), Bộ Tư lệnh Bảo vệ Lăng Chủ tịch Hồ Chí Minh đã tổ chức phát động Tết trồng cây “Đời đời nhớ ơn Bác Hồ” Xuân Giáp Thìn năm 2024"
+                android:textColor="@color/grey_dark_text"
+                android:textSize="@dimen/text_size_14" />
+        <ImageView
+            android:id="@+id/img_notification"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_test"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="21/12/2022 12:34:67"
+                android:id="@+id/time"
+                android:textColor="@color/semi_gray"
+                android:layout_marginTop="@dimen/size_15"
+                android:layout_marginBottom="@dimen/size_10"
+                android:textSize="@dimen/text_size_12"/>
+
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

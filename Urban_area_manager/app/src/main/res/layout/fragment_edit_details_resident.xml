@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/light_background"
+    tools:context=".feature.Admin.Home.Resident.View.EditDetailsResidentActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:layout_collapseMode="pin"
+        app:navigationIcon="@drawable/ic_back"
+        app:popupTheme="@style/AppTheme.PopupOverlay"
+        app:theme="@style/CustomToolbar"
+        app:title="Chỉnh sửa chi tiết cư dân" />
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/CustomTitleText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tên cư dân" />/>
+
+        <TextView
+            android:id="@+id/edt_resident_name"
+            style="@style/CustomTextInput"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_48"
+            android:layout_marginTop="@dimen/size_10"
+            android:background="@drawable/background_edt"
+            android:maxLines="1"
+            android:paddingLeft="26dp"
+            android:paddingRight="26dp" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/CustomTitleText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_10"
+            android:text="Tên tòa nhà" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_10"
+            android:background="@drawable/shape_border"
+            android:orientation="vertical"
+            android:paddingLeft="26dp"
+            android:paddingRight="26dp">
+
+            <Spinner
+                android:id="@+id/spin_building"
+                style="@style/CustomTextInput"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_48" />
+        </LinearLayout>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/CustomTitleText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_10"
+            android:text="Tên căn hộ" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_10"
+            android:background="@drawable/shape_border"
+            android:orientation="vertical"
+            android:paddingLeft="26dp"
+            android:paddingRight="26dp">
+
+            <Spinner
+                android:id="@+id/spin_apartment"
+                style="@style/CustomTextInput"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_48" />
+        </LinearLayout>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/CustomTitleText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_10"
+            android:text="Mối quan hệ chủ hộ" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_10"
+            android:background="@drawable/shape_border"
+            android:orientation="vertical"
+            android:paddingLeft="26dp"
+            android:paddingRight="26dp">
+
+            <Spinner
+                android:id="@+id/spin_relative"
+                style="@style/CustomTextInput"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_48" />
+        </LinearLayout>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:id="@+id/btn_update"
+        style="@style/ButtonBlue"
+        android:text="Cập nhật"/>
+
+
+</LinearLayout>

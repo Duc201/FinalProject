@@ -1,0 +1,10 @@
+// Chạy code ESP8266
+Để chạy file Code ESP 8266 cần tài phần mềm lập trình Arduino IDE
+Sau khi cài đặt xong. Chọn File -> Open -> Mở project đã tải về 
+
+// Cài đặt ứng dụng di động
+Để chạy ứng dụng di động cần cài đặt Android studio IDE
+Sau khi cài đặt xong. Chọn File -> Open -> mở project đã tải về
+Sau đó, Android studio sẽ tự động cài các tiện ích thư viện liên quan 
+Tiếp sau, cần cài đặt máy ảo 
+Nhấn Build -> Run để chạy chương trình nạp vào máy ảo

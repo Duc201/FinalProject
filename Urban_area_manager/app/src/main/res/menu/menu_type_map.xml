@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:title="Bản đồ thường"
+        android:id="@+id/NORMAL"
+        app:showAsAction="collapseActionView"/>
+    <item
+        android:title="Bản đồ vệ tinh"
+        android:id="@+id/SATELLITE"
+        app:showAsAction="collapseActionView"/>
+    <item
+        android:title="Bản đồ địa hình"
+        android:id="@+id/TERRAIN"
+        app:showAsAction="collapseActionView"/>
+    <item
+        android:title=" Bản đồ lai"
+        android:id="@+id/HYBRID"
+        app:showAsAction="collapseActionView"/>
+
+</menu>

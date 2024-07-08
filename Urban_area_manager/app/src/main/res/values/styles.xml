@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="TextNormalBlueDark" parent="TextAppearance.AppCompat">
+        <item name="android:ellipsize">end</item>
+        <item name="fontFamily">@font/opensans_regular</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">@color/dark_blue</item>
+    </style>
+
+    <style name="TextNormalGray" parent="TextAppearance.AppCompat">
+        <item name="android:ellipsize">end</item>
+        <item name="fontFamily">@font/opensans_regular</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">@color/grey_image</item>
+    </style>
+<!--    <style name="CustomToolbarTitleText" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">-->
+<!--        <item name="android:textSize">14sp</item>-->
+<!--        &lt;!&ndash; Bạn có thể thêm các thuộc tính khác như fontFamily, textColor, etc. &ndash;&gt;-->
+<!--    </style>-->
+    <style name="TextBoldBlueDark" parent="TextAppearance.AppCompat">
+        <item name="android:ellipsize">end</item>
+        <item name="fontFamily">@font/opensans_semi_bold</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/colorTextPrimary</item>
+    </style>
+    <style name="TextAppearance.Text.Regular" parent="android:TextAppearance">
+        <item name="fontFamily">fonts/open_sans/opensans_regular.ttf</item>
+    </style>
+    <style name="AppThemeNew.DialogTheme" parent="android:style/Theme.Translucent">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowSoftInputMode">adjustResize|stateAlwaysHidden</item>
+    </style>
+    <style name="TextTitleNormalGreyLight" parent="TextAppearance.AppCompat">
+        <item name="android:ellipsize">end</item>
+        <item name="android:textAppearance">@style/TextAppearance.Text.Regular</item>
+        <item name="android:textSize">@dimen/text_size_16</item>
+        <item name="android:textColor">@color/grey_light_text</item>
+    </style>
+    <style name="TextHeaderNormalBlueDark" parent="TextAppearance.AppCompat">
+        <item name="android:ellipsize">end</item>
+        <item name="android:textAppearance">@style/TextAppearance.Text.Regular</item>
+        <item name="android:textSize">@dimen/text_size_15</item>
+        <item name="android:textColor">@color/dark_blue</item>
+    </style>
+    <!-- Style cardview -->
+    <style name="CardViewBorder" parent="CardView.Light">
+        <item name="cardBackgroundColor">@color/white</item>
+        <item name="cardElevation">@dimen/size_8</item>
+        <item name="cardCornerRadius">@dimen/size_14</item>
+        <item name="android:foreground">?android:attr/selectableItemBackground</item>
+        <item name="android:clickable">true</item>
+    </style>
+    <style name="TextTitleNotification" parent="TextAppearance.AppCompat">
+        <item name="android:ellipsize">end</item>
+        <item name="fontFamily">@font/opensans_semi_bold</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/colorTextPrimary</item>
+    </style>
+
+    <style name="TextBoldDark" parent="TextAppearance.AppCompat">
+        <item name="android:ellipsize">end</item>
+        <item name="fontFamily">@font/opensans_semi_bold</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/blackTextColor</item>
+    </style>
+
+    <style name="ButtonBlue" parent="Widget.AppCompat.Button">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_height">?attr/actionBarSize</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:padding">12dp</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textAppearance">@style/TextTitleSemiBoldBlueDark</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:background">@drawable/bg_button_corner_30_blue</item>
+    </style>
+
+    <style name="ButtonRed" parent="Widget.AppCompat.Button">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_height">?attr/actionBarSize</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:padding">12dp</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textAppearance">@style/TextTitleSemiBoldBlueDark</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:background">@drawable/bg_button_corner_30_red</item>
+    </style>
+
+
+    <style name="TextTitleSemiBoldBlueDark" parent="TextAppearance.AppCompat">
+        <item name="android:ellipsize">end</item>
+        <item name="fontFamily">@font/opensans_semi_bold</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">@color/dark_blue</item>
+    </style>
+    <style name="TextTitleSemiBoldRedDark" parent="TextAppearance.AppCompat">
+        <item name="android:ellipsize">end</item>
+        <item name="fontFamily">@font/opensans_semi_bold</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">#FF5252</item>
+    </style>
+
+    <style name="AppTheme.FullScreen.LightStatusBar" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:forceDarkAllowed" tools:targetApi="q">false</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="M">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+
+
+        <!-- Base application theme. -->
+
+        <style name="AppTheme.NoActionBar">
+            <item name="windowActionBar">false</item>
+            <item name="windowNoTitle">true</item>
+        </style>
+
+        <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        </style>
+
+        <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" >
+            <item name="android:textSize">20sp</item>
+            <item name="android:textColor">#18FFFF</item>
+        </style>
+
+    <!-- Base application theme -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="CustomToolbar" parent="Widget.AppCompat.Toolbar">
+        <item name="titleTextAppearance">@style/CustomToolbarTitleText</item>
+    </style>
+
+    <!-- Custom Toolbar Title Text Appearance -->
+        <style name="CustomToolbarTitleText" parent="TextAppearance.Widget.AppCompat.Toolbar.Title" tools:ignore="DuplicateDefinition">
+            <item name="android:textSize">18sp</item>
+            <!-- Bạn có thể thêm các thuộc tính khác nếu cần -->
+        </style>
+
+
+
+
+        <style name="TransparentText" parent="@android:style/TextAppearance">
+            <item name="android:textColor">#00000000</item>
+        </style>
+
+        <style name="parent">
+            <item name="android:layout_width">match_parent</item>
+            <item name="android:layout_height">wrap_content</item>
+        </style>
+
+        <style name="headerText" parent="parent">
+            <item name="android:textColor">@color/blackTextColor</item>
+            <item name="android:textStyle">bold</item>
+        </style>
+
+        <style name="textInputHintStyle" parent="TextAppearance.AppCompat.Medium.Inverse">
+            <item name="android:textColorHint">@color/blackTextColor</item>
+            <item name="android:textColor">@color/blackTextColor</item>
+            <item name="android:textSize">17sp</item>
+            <item name="android:textStyle">bold</item>
+        </style>
+
+        <style name="viewParent">
+            <item name="android:layout_width">wrap_content</item>
+            <item name="android:layout_height">wrap_content</item>
+        </style>
+
+        <style name="profileDetailsLayout" parent="parent">
+            <item name="android:layout_marginTop">20dp</item>
+        </style>
+
+        <style name="profileDetailsImage">
+            <item name="android:layout_width">35dp</item>
+            <item name="android:layout_height">35dp</item>
+            <item name="android:layout_alignParentTop">true</item>
+            <item name="android:layout_alignParentLeft">true</item>
+        </style>
+
+        <style name="profileDetailsTextMain" parent="viewParent">
+            <item name="android:textColor">@color/blackTextColor</item>
+            <item name="android:textStyle">bold</item>
+            <item name="android:textSize">16sp</item>
+            <item name="android:layout_marginLeft">10dp</item>
+        </style>
+
+        <style name="profileDetailsMiniText" parent="viewParent">
+            <item name="android:layout_alignParentBottom">true</item>
+            <item name="android:textColor">@color/blackTextColor</item>
+            <item name="android:textSize">14sp</item>
+            <item name="android:layout_marginLeft">10dp</item>
+        </style>
+
+        <style name="proifleDetailsView">
+            <item name="android:layout_width">match_parent</item>
+            <item name="android:layout_height">2dp</item>
+            <item name="android:background">@color/profileAccentColor</item>
+            <item name="android:layout_marginTop">5dp</item>
+        </style>
+
+        <style name="profileStyledBackButton">
+            <item name="android:layout_width">wrap_content</item>
+            <item name="android:layout_height">wrap_content</item>
+            <item name="android:textAlignment">center</item>
+            <item name="android:paddingLeft">30dp</item>
+            <item name="android:paddingRight">50dp</item>
+            <item name="android:paddingTop">10dp</item>
+            <item name="android:paddingBottom">10dp</item>
+            <item name="android:textStyle">bold</item>
+            <item name="android:layout_centerHorizontal">true</item>
+            <item name="android:layout_alignParentTop">true</item>
+            <item name="android:minWidth">250dp</item>
+        </style>
+
+    <style name="profileStyledBackButton1">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/profile_back_button</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:paddingLeft">30dp</item>
+        <item name="android:paddingRight">50dp</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:drawableLeft">@drawable/back_to_home_button</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:minWidth">250dp</item>
+    </style>
+
+    <style name="ButtonBorderBlue" parent="Widget.AppCompat.Button">
+        <item name="android:textColor">@color/light_blue</item>
+        <item name="android:layout_height">@dimen/size_50</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:padding">@dimen/size_12</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textAppearance">@style/TextTitleSemiBoldBlueDark</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">@dimen/text_size_16</item>
+        <item name="android:background">@drawable/bg_button_corner_30_border_blue</item>
+    </style>
+
+    <style name="DropDownMenuStyle" parent="Widget.AppCompat.DropDownItem.Spinner">
+        <item name="android:background">@color/light_background</item>
+    </style>
+    <style name="CustomHintText" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/blue_text</item>
+        <item name="android:gravity">center</item>
+        <item name="android:alpha">0.7</item>
+    </style>
+    <style name="CustomHintTextLeft" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/blue_text</item>
+        <item name="android:gravity">left</item>
+    </style>
+
+    <style name="CustomTitleText" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/grey_title</item>
+        <item name="fontFamily"></item>
+        <item name="android:gravity">left</item>
+    </style>
+    <style name="CustomTitleTextBlack" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/colorPlaceholder</item>
+        <item name="fontFamily"></item>
+        <item name="android:gravity">left</item>
+    </style>
+    <style name="CustomTextInput" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:gravity">center|left</item>
+        <item name="hintTextColor">@color/grey_hint</item>
+    </style>
+    <style name="CustomTextInputCentre" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:gravity">center</item>
+        <item name="hintTextColor">@color/grey_hint</item>
+    </style>
+    <style name="CustomTextInputCentreBlack" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/blackTextColor</item>
+        <item name="android:gravity">center</item>
+        <item name="hintTextColor">@color/grey_hint</item>
+    </style>
+    <!-- Custom DatePickerDialog theme -->
+    <style name="CustomDatePickerDialogTheme" parent="ThemeOverlay.MaterialComponents.Dialog">
+        <!-- Customize your theme here -->
+        <item name="colorAccent">@color/blue_gradient_end</item>
+        <!-- Add other customizations as needed -->
+    </style>
+
+
+</resources>

@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+
+    <application
+        android:name=".core.component.MyApplication"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Urban_area_manager"
+        tools:targetApi="31">
+        <activity
+            android:name=".feature.Resident.UserInfor.Notification.ResidentNotificationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".feature.Employee.NotificationEmployee.NotificationEmmployeeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".feature.Resident.Home.Service.ServicEmployeeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".feature.Admin.Home.Bill.View.StepService.DetailsStepService"
+            android:exported="false" />
+
+        <service
+            android:name=".utils.PushNotificationService"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name=".feature.Admin.Home.Sensor.View.ChartSensorActivity"
+            android:exported="false" />
+        <activity
+            android:name=".feature.Resident.UserInfor.ResidentInformationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".feature.Employee.EmployeeInfor.EmployeeInformationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".feature.Admin.UserInfor.UserInformationActivity"
+            android:exported="true" />
+        <activity
+            android:name=".feature.Auth.ui.activity.OpenEmailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".feature.Employee.Repair.Camera.ItemCameraRepairActivity"
+            android:exported="false" />
+        <activity
+            android:name=".feature.Employee.Repair.Camera.ListCameraRepairActivity"
+            android:exported="false" />
+        <activity
+            android:name=".feature.Resident.Home.Bill.ZaloPay.PayActivity"
+            android:exported="true"
+            android:label="Merchant Demo"
+            android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="app"
+                    android:scheme="demozpdk" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".feature.Employee.Reflect.Complete.EmployeeDetailsCompleteActivity"
+            android:exported="false" />
+        <activity
+            android:name=".feature.Resident.Reflect.Complete.ResidentDetailsCompleteReflectActivity"
+            android:exported="false" />
+        <activity
+            android:name=".feature.Resident.Reflect.Process.ResidentDetailsProcessReflectActivity"
+            android:exported="false" />
+        <activity
+            android:name=".feature.Auth.ui.activity.ResidentRegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".feature.Admin.Home.Bill.View.ServiceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".feature.Admin.Home.Bill.View.Bill.BillActivity"
+            android:exported="true" />
+        <activity
+            android:name=".feature.Admin.Reflect.View.AddReflectFragment"
+            android:exported="true" />
+        <activity
+            android:name=".feature.Auth.ui.activity.LoginAdminActivity"
+            android:exported="true" />
+        <activity
+            android:name=".feature.Admin.Home.Employee.View.EmployeeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".feature.Admin.Home.Apartment.View.ApartmentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".feature.Employee.Repair.Bill.BillRepairActivity"
+            android:exported="true" />
+        <activity
+            android:name=".feature.Resident.Home.Bill.ResidentBillActivity"
+            android:exported="true" />
+        <activity
+            android:name=".feature.Resident.Home.Camera.ResidentCameraActivity"
+            android:exported="false" />
+        <activity
+            android:name=".feature.Resident.Home.Map.ResidentMapActivity"
+            android:exported="false" />
+        <activity
+            android:name=".feature.Resident.Home.Sensor.ResidentSensorActivity"
+            android:exported="false" />
+        <activity
+            android:name=".feature.Resident.ResidentMainViewPagerAdapter"
+            android:exported="false" />
+        <activity
+            android:name=".feature.Resident.ResidentMainActivity"
+            android:exported="true" />
+        <activity
+            android:name=".feature.Employee.Security.SecurityActivity"
+            android:exported="true" />
+        <activity
+            android:name=".feature.Employee.Reflect.Process.AdministrativeDetailsProcessActivity"
+            android:exported="false" />
+        <activity
+            android:name=".feature.Employee.Administrative.AdministrattiveActivity"
+            android:exported="true" />
+        <activity
+            android:name=".feature.Auth.ui.activity.LoginEmployeeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".feature.Admin.Home.Sensor.View.SensorActivity"
+            android:exported="false" />
+        <activity
+            android:name=".feature.Admin.Home.Camera.View.CameraActivity"
+            android:exported="false" /> <!-- <activity -->
+        <!-- android:name=".feature.main.Home.Employee.View.EmployeeActivity" -->
+        <!-- android:exported="false" /> -->
+        <activity
+            android:name=".feature.Admin.Home.Building.View.BuildingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".feature.Admin.UserInfor.NotificationsUserActivity"
+            android:exported="false" />
+        <activity
+            android:name=".feature.Admin.Reflect.View.Complete.DetailsCompleteReflectActivity"
+            android:exported="false" />
+        <activity
+            android:name=".feature.Admin.Reflect.View.Assigned.DetailsAssignedReflectActivity"
+            android:exported="false" />
+        <activity
+            android:name=".feature.Admin.Reflect.View.Process.DetailsProcessReflectActivity"
+            android:exported="false" />
+        <activity
+            android:name=".feature.Admin.Home.Resident.View.ResidentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".feature.Auth.ui.activity.SplashActivity"
+            android:exported="true"
+            android:screenOrientation="locked" />
+        <activity
+            android:name=".feature.Admin.MainActivity"
+            android:exported="true"
+            android:screenOrientation="locked" />
+        <activity
+            android:name=".feature.Admin.Home.Resident.View.Authen.DetailsResidentAuthenActivity"
+            android:exported="true" />
+        <activity
+            android:name=".feature.Auth.ui.activity.ForgetPassActivity"
+            android:exported="true"
+            android:screenOrientation="locked" />
+        <activity
+            android:name=".feature.Admin.Home.Camera.View.ItemCameraActivity"
+            android:configChanges="orientation|screenSize"
+            android:exported="true" />
+        <activity
+            android:name=".feature.Admin.Home.Resident.View.DetailsResidentActivity"
+            android:exported="true" />
+        <activity
+            android:name=".feature.Auth.ui.activity.LoginResidentActivity"
+            android:exported="true"
+            android:screenOrientation="locked" />
+        <activity
+            android:name=".feature.Auth.ui.activity.RegisterActivity"
+            android:exported="true"
+            android:screenOrientation="locked" />
+        <activity
+            android:name=".feature.Admin.Home.Resident.View.EditDetailsResidentActivity"
+            android:exported="true"
+            android:screenOrientation="locked" />
+        <activity
+            android:name=".feature.Auth.ui.activity.TypeLoginActivity"
+            android:exported="true"
+            android:screenOrientation="locked">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".feature.Admin.Home.Notification.View.NotificationActivity"
+            android:exported="true"
+            android:screenOrientation="locked" />
+        <activity
+            android:name=".feature.Employee.Repair.RepairActivity"
+            android:exported="true"
+            android:screenOrientation="locked" /> <!-- <activity android:name=".feature.mainResident.ResidentMainActivity" -->
+        <!-- android:exported="true" -->
+        <!-- android:screenOrientation="locked" -->
+        <!-- tools:ignore="DuplicateActivity"> -->
+        <!--  -->
+        <!-- </activity> -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/my_map_api" />
+    </application>
+
+</manifest>

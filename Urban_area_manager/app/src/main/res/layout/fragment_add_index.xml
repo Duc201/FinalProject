@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/light_background"
+    android:orientation="vertical"
+    tools:context=".feature.mainEmployee.Employee.Repair.Bill.AddIndexFragment">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:layout_collapseMode="pin"
+        app:title="Chốt chỉ số"
+        app:navigationIcon="@drawable/ic_back"
+        app:popupTheme="@style/AppTheme.PopupOverlay"
+        app:theme="@style/CustomToolbar"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/size_30"
+            android:layout_margin="@dimen/size_8"
+            android:orientation="vertical">
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/CustomTitleText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Kỳ thanh toán" />/>
+
+                <TextView
+                    android:id="@+id/tv_timeCreat"
+                    style="@style/CustomTextInput"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/size_48"
+                    android:layout_marginTop="@dimen/size_10"
+                    android:background="@drawable/background_edt"
+                    android:maxLines="1"
+                    android:paddingLeft="26dp"
+                    android:paddingRight="26dp" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/CustomTitleText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/size_10"
+                    android:text="Căn hộ" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/size_10"
+                    android:background="@drawable/shape_border"
+                    android:orientation="vertical"
+                    android:paddingLeft="26dp"
+                    android:paddingRight="26dp">
+
+                    <Spinner
+                        android:id="@+id/spin_apartment"
+                        style="@style/CustomTextInput"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/size_48" />
+                </LinearLayout>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size_30"
+                android:orientation="horizontal">
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginRight="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/CustomTitleText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Số điện cũ" />/>
+
+                    <EditText
+                        android:id="@+id/edt_index_electric_old"
+                        style="@style/CustomTextInput"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/size_48"
+                        android:layout_marginTop="@dimen/size_10"
+                        android:background="@drawable/background_edt"
+                        android:maxLines="1"
+                        android:paddingLeft="26dp"
+                        android:paddingRight="26dp" />
+                </androidx.appcompat.widget.LinearLayoutCompat>
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/CustomTitleText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Số điện mới" />/>
+
+                    <EditText
+                        android:id="@+id/edt_index_electric_new"
+                        style="@style/CustomTextInput"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/size_48"
+                        android:layout_marginTop="@dimen/size_10"
+                        android:background="@drawable/background_edt"
+                        android:maxLines="1"
+                        android:paddingLeft="26dp"
+                        android:paddingRight="26dp" />
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size_30"
+                android:orientation="horizontal">
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginRight="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/CustomTitleText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Số nước cũ" />/>
+
+                    <EditText
+                        android:id="@+id/edt_index_water_old"
+                        style="@style/CustomTextInput"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/size_48"
+                        android:layout_marginTop="@dimen/size_10"
+                        android:background="@drawable/background_edt"
+                        android:maxLines="1"
+                        android:paddingLeft="26dp"
+                        android:paddingRight="26dp" />
+                </androidx.appcompat.widget.LinearLayoutCompat>
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/CustomTitleText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Số nước mới" />/>
+
+                    <EditText
+                        android:id="@+id/edt_index_water_new"
+                        style="@style/CustomTextInput"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/size_48"
+                        android:layout_marginTop="@dimen/size_10"
+                        android:background="@drawable/background_edt"
+                        android:maxLines="1"
+                        android:paddingLeft="26dp"
+                        android:paddingRight="26dp" />
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size_30"
+                android:orientation="horizontal">
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginRight="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/CustomTitleText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Ảnh số điện" />/>
+
+                    <ImageView
+                        android:id="@+id/image_index_electric"
+                        style="@style/CustomTextInput"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/size_100"
+                        android:layout_marginTop="@dimen/size_10"
+                        android:src="@drawable/ic_photo_camera"
+                        android:paddingLeft="26dp"
+                        android:paddingRight="26dp" />
+                </androidx.appcompat.widget.LinearLayoutCompat>
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/CustomTitleText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Ảnh Số nước" />/>
+
+                    <ImageView
+                        android:id="@+id/img_index_water"
+                        style="@style/CustomTextInput"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/size_100"
+                        android:layout_marginTop="@dimen/size_10"
+                        android:src="@drawable/ic_photo_camera"
+                        android:paddingLeft="26dp"
+                        android:paddingRight="26dp" />
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:id="@+id/btn_add"
+                style="@style/ButtonBlue"
+                android:text="Tạo chỉ số"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </ScrollView>
+
+
+
+</LinearLayout>

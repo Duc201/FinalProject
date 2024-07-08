@@ -1,0 +1,20 @@
+<!-- res/drawable/background_selector.xml -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <shape>
+            <gradient
+                android:startColor="#8E000000"
+                android:endColor="#00000000"
+                android:angle="270" />
+            <alpha android:factor="0.7"/> <!-- Giảm độ mờ tại đây -->
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <gradient
+                android:startColor="#8E000000"
+                android:endColor="#00000000"
+                android:angle="270" />
+        </shape>
+    </item>
+</selector>

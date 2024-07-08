@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/menu_home"
+        android:icon="@drawable/ic_home_nav_bottom"
+        android:title="@string/drawer_menu_label_home"/>
+    <item android:id="@+id/menu_reflect"
+        android:icon="@drawable/ic_reflect_nav_bottom"
+        android:title="@string/drawer_menu_label_reflect"/>
+    <item android:id="@+id/menu_account"
+        android:icon="@drawable/ic_user_bottom"
+        android:title="@string/drawer_menu_label_account"/>
+</menu>

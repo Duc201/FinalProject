@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="@dimen/size_10"
+    android:layout_gravity="center"
+    android:animateLayoutChanges="true"
+    android:elevation="@dimen/double_normal"
+    app:cardElevation="5dp"
+    android:padding="10dp"
+    android:layout_margin="8dp"
+    android:background="@drawable/card_view_shadow">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/item_reflect"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:id="@+id/llo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/size_10"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+            <TextView
+                android:id="@+id/tv_name_apartment"
+                style="@style/TextBoldBlueDark"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Phòng 203 "
+                android:gravity="left"
+                android:textSize="@dimen/text_size_19" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Tổng Hóa Đơn" />
+
+                <TextView
+                    android:id="@+id/tv_sum_bill"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:maxLines="1"
+                    android:gravity="right"
+                    android:text="150000VND"
+                    android:textStyle="bold"
+                    android:paddingHorizontal="@dimen/size_10"
+                    android:paddingLeft="26dp"
+                    android:paddingRight="26dp"
+                    android:textColorHint="@color/blue_text"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Hạn thanh toán" />
+
+                <TextView
+                    android:id="@+id/end_date"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:maxLines="1"
+                    android:gravity="right"
+                    android:text="24/12/2009"
+                    android:paddingHorizontal="@dimen/size_10"
+                    android:paddingLeft="26dp"
+                    android:paddingRight="26dp"
+                    android:textColorHint="@color/blue_text"
+                    />
+            </LinearLayout>
+
+                <TextView
+                    android:id="@+id/state_pay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:maxLines="1"
+
+                    android:layout_gravity="center"
+                    android:text="Đã thanh toán"
+                    android:paddingHorizontal="@dimen/size_10"
+                    android:paddingLeft="26dp"
+                    android:paddingRight="26dp"
+                    android:textColorHint="@color/blue_text"
+                    android:textColor="#FFFFFF"
+                    android:background="@color/blue_text"
+                    android:padding="5dp"
+                    />
+
+
+        </LinearLayout>
+
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

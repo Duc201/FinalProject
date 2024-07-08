@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "392747386759",
+    "project_id": "urban-area-manager",
+    "storage_bucket": "urban-area-manager.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:392747386759:android:504c91c78ad4517f69b522",
+        "android_client_info": {
+          "package_name": "com.example.urban_area_manager"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDAkBPEYmLFmvBSIaVDSOEPrAk3ueXlBHs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

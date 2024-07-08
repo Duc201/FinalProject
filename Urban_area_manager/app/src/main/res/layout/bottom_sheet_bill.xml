@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_background"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Quản lý hóa đơn"
+            android:layout_marginTop="@dimen/size_20"
+            style="@style/TextBoldBlueDark"
+            android:gravity="center"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_1"
+            android:layout_marginLeft="@dimen/size_20"
+            android:layout_marginRight="@dimen/size_20"
+
+
+            android:background="@color/background_color" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/size_20"
+                android:orientation="vertical">
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:animateLayoutChanges="true"
+                    android:clickable="true"
+                    android:elevation="@dimen/double_normal"
+                    android:foreground="?selectableItemBackgroundBorderless"
+                    app:cardBackgroundColor="@android:color/white"
+                    app:cardCornerRadius="@dimen/large"
+                    app:cardElevation="@dimen/normal">
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/image_service"
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:layout_marginTop="@dimen/normal"
+                        android:padding="@dimen/size_15"
+                        android:src="@drawable/ic_all_service"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"/>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_name_service"
+                    style="@style/TextNormalBlueDark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/large"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:textAlignment="center"
+                    android:layout_gravity="center"
+                    android:paddingHorizontal="@dimen/normal"
+                    android:text="Dịch vụ"
+                    android:textColor="@color/grey_dark_text" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:orientation="vertical">
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:animateLayoutChanges="true"
+                    android:clickable="true"
+                    android:elevation="@dimen/double_normal"
+                    android:foreground="?selectableItemBackgroundBorderless"
+                    app:cardBackgroundColor="@android:color/white"
+                    app:cardCornerRadius="@dimen/large"
+                    app:cardElevation="@dimen/normal">
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/image_bill"
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:layout_marginTop="@dimen/normal"
+                        android:padding="@dimen/size_15"
+                        android:src="@drawable/ic_service_bill"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"/>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_name_bill"
+                    style="@style/TextNormalBlueDark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/large"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:textAlignment="center"
+                    android:paddingHorizontal="@dimen/normal"
+                    android:text="Hóa đơn"
+                    android:layout_gravity="center"
+                    android:textColor="@color/grey_dark_text" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

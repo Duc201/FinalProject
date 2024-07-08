@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="@dimen/size_10"
+    android:layout_gravity="center"
+    android:animateLayoutChanges="true"
+    android:elevation="@dimen/double_normal"
+    app:cardElevation="5dp"
+    android:padding="10dp"
+    android:layout_margin="8dp"
+    android:background="@drawable/card_view_shadow">
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/item"
+        android:padding="@dimen/size_10"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/CustomTitleTextBlack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_10"
+            android:text="Dịch vụ: "
+            android:id="@+id/name_detailBill"
+            android:textSize="@dimen/size_18"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/CustomTitleText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginTop="@dimen/size_5"
+                    android:text="Chỉ số cũ" />/>
+
+                <TextView
+                    android:id="@+id/edt_index_old"
+                    style="@style/CustomTextInputCentreBlack"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/size_48"
+                    android:background="@drawable/background_edt"
+                    android:maxLines="1"
+                    android:layout_marginTop="@dimen/size_5"
+                    android:paddingLeft="26dp"
+                    android:paddingRight="26dp" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/CustomTitleText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginTop="@dimen/size_5"
+                    android:text="Chỉ số mới" />/>
+
+                <TextView
+                    android:id="@+id/edt_index_new"
+                    style="@style/CustomTextInputCentreBlack"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/size_48"
+                    android:background="@drawable/background_edt"
+                    android:maxLines="1"
+                    android:layout_marginTop="@dimen/size_5"
+
+                    android:paddingLeft="26dp"
+                    android:paddingRight="26dp" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_13"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Số lượng: " />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:id="@+id/number_index"
+                android:text="3: " />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_5"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Thành tiền: " />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/sum"
+                android:textStyle="bold"
+                android:textColor="#FFAB40"
+                android:text="3: " />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.cardview.widget.CardView>

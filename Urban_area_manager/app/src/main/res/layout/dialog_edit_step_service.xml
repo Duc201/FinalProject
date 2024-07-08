@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <androidx.cardview.widget.CardView
+        android:layout_width="312dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/size_12"
+        android:clickable="false"
+        app:cardCornerRadius="@dimen/size_14"
+        android:elevation="@dimen/size_8"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/size_12">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/dialog_name"
+                style="@style/TextBoldBlueDark"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/size_15"
+                android:layout_marginTop="@dimen/size_30"
+                android:layout_marginEnd="@dimen/size_15"
+                android:gravity="center"
+                android:text="THAY ĐỔI DỊCH VỤ"
+                android:textSize="@dimen/text_size_16"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="HardcodedText" />
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="10dp">
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/CustomTitleText"
+                android:text="Tên Bậc"/>/>
+            <TextView
+                android:id="@+id/name_step"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_48"
+                android:layout_marginTop="@dimen/size_10"
+                android:paddingLeft="26dp"
+                android:paddingRight="26dp"
+                style="@style/CustomTextInput"
+                android:background="@drawable/background_edt"
+                android:maxLines="1" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/CustomTitleText"
+                android:text="Giá"/>/>
+            <EditText
+                android:id="@+id/price_step"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_48"
+                android:layout_marginTop="@dimen/size_10"
+                android:paddingLeft="26dp"
+                android:paddingRight="26dp"
+                android:inputType="numberDecimal"
+                style="@style/CustomTextInput"
+                android:background="@drawable/background_edt"
+                android:maxLines="1" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/CustomTitleText"
+                android:text="Khoảng"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <EditText
+                        android:id="@+id/startvalue"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/size_48"
+                        android:layout_weight="1"
+                        android:layout_marginTop="@dimen/size_10"
+                        android:paddingLeft="26dp"
+                        android:paddingRight="26dp"
+                        style="@style/CustomTextInput"
+                        android:inputType="numberDecimal"
+                        android:background="@drawable/background_edt"
+                        android:hint="Giá trị đầu"
+                        android:maxLines="1" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="-"/>
+                    <EditText
+                        android:id="@+id/end_value"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/size_48"
+                        android:layout_weight="1"
+                        android:layout_marginTop="@dimen/size_10"
+                        android:paddingLeft="26dp"
+                        android:paddingRight="26dp"
+                        style="@style/CustomTextInput"
+                        android:inputType="numberDecimal"
+                        android:background="@drawable/background_edt"
+                        android:hint="Gía trị cuôí"
+                        android:maxLines="1" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textSize="10dp"
+                    android:text="Nếu là bậc cuối vui lòng chỉ nhập giá trị đầu"
+                    android:textStyle="italic"
+                    />
+
+
+            </LinearLayout>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/size_15"
+            android:layout_marginTop="@dimen/size_12"
+            android:layout_marginEnd="@dimen/size_15"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_cancel"
+                style="@style/ButtonBorderBlue"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="@dimen/size_12"
+                android:layout_marginTop="@dimen/size_20"
+                android:layout_marginBottom="@dimen/size_15"
+                android:layout_weight="1"
+                android:text="Hủy"
+                android:textSize="@dimen/text_size_14" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_accept"
+                style="@style/ButtonBlue"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="@dimen/size_12"
+                android:layout_marginTop="@dimen/size_20"
+                android:layout_marginBottom="@dimen/size_15"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="Đồng ý"
+                android:textSize="@dimen/text_size_14" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</ScrollView>
+
+
+
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

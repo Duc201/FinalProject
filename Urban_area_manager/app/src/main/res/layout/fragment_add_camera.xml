@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/light_background">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:layout_collapseMode="pin"
+        app:title=" Thêm Camera"
+        app:navigationIcon="@drawable/ic_back"
+        app:popupTheme="@style/AppTheme.PopupOverlay"
+        app:theme="@style/CustomToolbar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="@dimen/size_10">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Thông tin camera"
+                style="@style/CustomTitleText"
+                android:textStyle="bold"
+                android:textSize="@dimen/text_size_17"
+
+                android:layout_marginBottom="@dimen/size_20"
+                />
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/size_10"
+                    style="@style/CustomTitleText"
+                    android:text="Nhà sản xuất"/>/>
+                <EditText
+                    android:id="@+id/edt_producer_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/size_48"
+                    android:layout_marginTop="@dimen/size_10"
+                    android:paddingLeft="26dp"
+                    android:paddingRight="26dp"
+                    style="@style/CustomTextInput"
+                    android:background="@drawable/background_edt"
+                    android:maxLines="1" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/size_10"
+                    style="@style/CustomTitleText"
+                    android:text="Serial"/>/>
+                <EditText
+                    android:id="@+id/edt_camera_serial"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/size_48"
+                    android:layout_marginTop="@dimen/size_10"
+                    android:paddingLeft="26dp"
+                    android:paddingRight="26dp"
+                    android:inputType="number"
+                    style="@style/CustomTextInput"
+                    android:background="@drawable/background_edt"
+                    android:maxLines="1" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/size_10"
+                    style="@style/CustomTitleText"
+                    android:text="Vị trí lắp đặt"/>/>
+                <EditText
+                    android:id="@+id/edt_camera_area"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/size_48"
+                    android:layout_marginTop="@dimen/size_10"
+                    android:paddingLeft="26dp"
+                    android:paddingRight="26dp"
+                    style="@style/CustomTextInput"
+                    android:background="@drawable/background_edt"
+                    android:maxLines="1" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/size_10"
+                    style="@style/CustomTitleText"
+                    android:text="Đường dẫn RTSP "/>/>
+                <EditText
+                    android:id="@+id/edt_camera_RTSP"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/size_10"
+                    android:paddingLeft="26dp"
+                    android:paddingRight="26dp"
+                    style="@style/CustomTextInput"
+                    android:background="@drawable/background_edt"
+                     />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/size_10"
+                    style="@style/CustomTitleText"
+                    android:text="Trạng thái"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:background="@drawable/shape_border"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/size_10"
+                    android:paddingLeft="26dp"
+                    android:orientation="vertical"
+                    android:paddingRight="26dp">
+                    <Spinner
+                        android:id="@+id/spin_sate"
+                        android:layout_width="match_parent"
+                        style="@style/CustomTextInput"
+                        android:layout_height="@dimen/size_48" />
+                </LinearLayout>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/size_10"
+                android:orientation="vertical"/>
+            <androidx.appcompat.widget.AppCompatButton
+
+                android:id="@+id/btn_send"
+                style="@style/ButtonBlue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size_15"
+                android:layout_marginBottom="@dimen/size_30"
+                android:text="Tạo" />
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</LinearLayout>
